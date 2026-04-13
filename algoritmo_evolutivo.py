@@ -3,6 +3,7 @@ import math
 from statistics import mean
 import matplotlib.pyplot as plt
 
+
 '''
 Algoritmo evolutivo para optimización de funciones de una variable
 '''
@@ -73,7 +74,6 @@ def algoritmo_evolutivo(fitness, i, M, L, r, m, a, b):
     poblacion = generar_poblacion(M, a, b)
     
     # Ciclo de evolución
-    #while max(valores_fitness) < umbral_fitness: #-- cómo funciona? sí está bien???
     for _ in range(i): # Número de generaciones
         # Calcular el fitness de cada individuo 
         valores_fitness = [fitness(individuo) for individuo in poblacion]
